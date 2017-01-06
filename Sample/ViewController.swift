@@ -42,7 +42,7 @@ class ViewController: UIViewController {
 
         let service = DataService.sharedInstance
 
-        service.doLogIn("grower1.ibuyflowers", password: "wpwd") { (error: NSError?, user: User?) in
+        service.doLogIn("userlogin", password: "wpwd") { (error: NSError?, user: User?) in
 
             if let e = error {
                 print(e.localizedDescription)
